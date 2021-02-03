@@ -1,12 +1,13 @@
+// Write a program that displays the integers between 1 and 100 
+// that are divisible by either 6 or 7 but not both.
 
-var x = 6
-var y = 7
 
-function gcd(x, y) {
-  let guess = Math.min(x, y);
-  while (x % guess === 0 || y % guess
-    === 0) {
-    guess--;
+function Divisible() {
+  for (let i = 1; i <= 100; i++) {
+    let num = ((i % 6 == 0) || (i % 7 == 0)
+      && !(i % 6 == 0 && i % 7 == 0));
   }
-  return guess;
+
+  if (num == true)
+    console.log(i + " is divisible");
 }
