@@ -11,13 +11,19 @@
   <script>
     var canvas = document.getElementById('myCanvas');
     var ctx = canvas.getContext('2d');
+    ctx.strokeStyle = 'black';
 
     // column 1
     ctx.beginPath();
     ctx.moveTo(400, 400);
     ctx.rect(50, 300, 80, 400);
     ctx.lineWidth = 3;
-    ctx.strokeStyle = 'black';
+    ctx.stroke();
+
+    ctx.beginPath();
+    ctx.moveTo(50, 300);
+    ctx.lineTo(90, 150);
+    ctx.lineTo(130, 300);
     ctx.stroke();
 
     // Rectangle 1
@@ -25,7 +31,85 @@
     ctx.moveTo(400, 400);
     ctx.rect(130, 450, 200, 250);
     ctx.lineWidth = 3;
-    ctx.strokeStyle = 'black';
+    ctx.stroke();
+
+    ctx.beginPath();
+    ctx.moveTo(130, 450);
+    ctx.lineTo(230, 220);
+    ctx.lineTo(330, 450);
+    ctx.stroke();
+
+    // column 2
+    ctx.beginPath();
+    ctx.moveTo(600, 400);
+    ctx.rect(330, 300, 80, 400);
+    ctx.lineWidth = 3;
+    ctx.stroke();
+
+    ctx.beginPath();
+    ctx.moveTo(330, 300);
+    ctx.lineTo(370, 150);
+    ctx.lineTo(410, 300);
+    ctx.stroke();
+
+    // door amd windows
+
+    ctx.beginPath();
+    ctx.moveTo(400, 300);
+    ctx.rect(205, 600, 50, 100);
+    ctx.lineWidth = 3;
+    ctx.stroke();
+
+    ctx.beginPath();
+    ctx.moveTo(205, 600);
+    ctx.lineTo(230, 560);
+    ctx.lineTo(255, 600);
+    ctx.stroke();
+
+    ctx.beginPath();
+    ctx.arc(170, 500, 20, 0, 2 * Math.PI);
+    ctx.stroke();
+
+    ctx.beginPath();
+    ctx.arc(290, 500, 20, 0, 2 * Math.PI);
+    ctx.stroke();
+
+    // trees
+
+    ctx.beginPath();
+    ctx.moveTo(600, 700);
+    ctx.rect(530, 550, 40, 150);
+    ctx.lineWidth = 3;
+    ctx.stroke();
+
+    ctx.beginPath();
+    ctx.moveTo(530, 550);
+    ctx.lineTo(550, 510);
+    ctx.lineTo(570, 550);
+    ctx.stroke();
+
+    ctx.beginPath();
+    ctx.moveTo(600, 700);
+    ctx.rect(630, 550, 40, 150);
+    ctx.lineWidth = 3;
+    ctx.stroke();
+
+    ctx.beginPath();
+    ctx.moveTo(630, 550);
+    ctx.lineTo(650, 510);
+    ctx.lineTo(670, 550);
+    ctx.stroke();
+
+    ctx.beginPath();
+    ctx.moveTo(600, 700);
+    ctx.rect(730, 550, 40, 150);
+    ctx.lineWidth = 3;
+    ctx.stroke();
+
+    ctx.beginPath();
+    ctx.moveTo(730, 550);
+    ctx.lineTo(750, 510);
+    ctx.lineTo(770, 550);
     ctx.stroke();
 
   </script>
