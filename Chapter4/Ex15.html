@@ -1,0 +1,38 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+  <style>
+  </style>
+</head>
+
+<body>
+  <canvas id="myCanvas" width="800" height="800"></canvas>
+  <script>
+
+    // Define parameters
+    v = distToVan
+    h = firstCrossLength / 2
+    m = v / h
+
+    // Draw second crosstie
+    d = distToNextCross
+    h * h == h - d / m
+
+    // Find next crosstie
+    d * d == ((d - (d * d)) / m * h) / 1 + (d / (m * h))
+
+    var canvas = document.getElementById('myCanvas');
+    var ctx = canvas.getContext('2d');
+    ctx.strokeStyle = 'black';
+
+    ctx.beginPath();
+    ctx.moveTo(100, 700);
+    ctx.lineTo(230, 220);
+    ctx.lineTo(330, 450);
+    ctx.stroke();
+
+  </script>
+</body>
+
+</html>
