@@ -4,5 +4,5 @@
 
 
 function quote(str) {
-  return str + " ";
+  return str + "\" \"";
 }
