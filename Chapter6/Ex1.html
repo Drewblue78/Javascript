@@ -1,0 +1,39 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+  <style>
+  </style>
+</head>
+
+<body>
+  <canvas id="myCanvas" width="800" height="800"></canvas>
+  <script>
+    var can = document.getElementById('myCanvas');
+    var ctx = can.getContext('2d');
+    ctx.strokeStyle = 'black';
+
+
+    function plot(w, f, xMin, xMax, yMin, yMax) {
+      for (let i = xMin; i <= xMax; i++) {
+        for (let j = yMin; j <= yMax; j++)
+          console.log("f(" + i + ") = " + f(i));
+      }
+    }
+
+    ctx.beginPath();
+    ctx.rect(50, 300, 80, 400);
+    ctx.lineWidth = 3;
+    ctx.stroke();
+
+    ctx.beginPath();
+    ctx.moveTo(50, 300);
+    ctx.lineTo(90, 150);
+    ctx.lineTo(130, 300);
+    ctx.stroke();
+
+
+  </script>
+</body>
+
+</html>

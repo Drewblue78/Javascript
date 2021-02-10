@@ -13,10 +13,11 @@ function consecutiveHeads(n) {
     }
   }
   if (x = i) {
-    console.log("It took" + i + "tosses to get" + n + "consecutive heads)
-    }
-}
+    console.log("It took" + i + "tosses to get" + n + "consecutive heads")
+  }
 
-function flipCoin() {
-  return (randomChance() ? "heads" : "tails";
+
+  function flipCoin() {
+    return (randomChance() ? "heads" : "tails");
+  }
 }
