@@ -5,24 +5,23 @@
 // drawConsoleBox(52, 6) should produce the following diagram:
 
 
-function drawConsoleBox(width, height)
+function drawConsoleBox(w, h) {
 
-var line = "+"
-for (let i = 0; i < 10; i++) {
-  line += "-"
-  for (let j = 0; j < 10; j++) {
+  let line = "+"
+  for (let w = 0; w < 10; w++) {
+    line += "-"
     line += "+";
+    for (let h = 0; h < 10; h++) {
+    }
   }
-  line += "+";
 }
 
 
+function drawConsoleBox(w, h) {
 
-
-var line = "+"
-for (var i = 0; i < 10; i++) {
-  line += "-"
-
+  var line = "+"
+  for (var i = 0; i < 10; i++) {
+    line += "-"
+  }
+  line += "+"
 }
-line += "+"
-
