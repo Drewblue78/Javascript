@@ -1,4 +1,4 @@
-// Rewrite the countdownfunctionon page 96 so that it uses a
+// Rewrite the countdownfunction on page 96 so that it uses a
 // while loop instead of a for loop.
 
 function countdown(start) {
@@ -6,5 +6,5 @@ function countdown(start) {
   while (t >= 0) {
     t--;
   }
-  concole.log(t);
+  console.log(t);
 }

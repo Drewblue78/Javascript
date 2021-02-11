@@ -4,10 +4,10 @@
 
 function Divisible() {
   for (let i = 1; i <= 100; i++) {
-    let num = ((i % 6 == 0) || (i % 7 == 0)
-      && !(i % 6 == 0 && i % 7 == 0));
-  }
+    let num = ((i % 6 == 0) || (i % 7 == 0))
+      && !(i % 6 == 0 && i % 7 == 0)
 
-  if (num == true)
-    console.log(i + " is divisible");
+    if (num)
+      console.log(i + " is divisible");
+  }
 }

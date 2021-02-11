@@ -11,5 +11,5 @@ function intensify(str) {
 }
 
 function reinforce(str) {
-  return "doublepluscold" + str
+  return "double" + str
 }

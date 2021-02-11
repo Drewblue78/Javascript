@@ -4,5 +4,5 @@
 // N×(N+1)/2
 
 function sumFirstNIntegers(n) {
-  (n * (n + 1)) / 2
+  return (n * (n + 1)) / 2
 }

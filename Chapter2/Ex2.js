@@ -7,7 +7,5 @@
 
 
 function quotient(x, y) {
-
-  return Math.floor(x % y)
-
+  return Math.floor(x / y)
 }
