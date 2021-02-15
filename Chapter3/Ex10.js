@@ -16,7 +16,6 @@ function drawConsoleBox(w, h) {
   }
 }
 
-
 function drawConsoleBox(w, h) {
 
   var line = "+"
