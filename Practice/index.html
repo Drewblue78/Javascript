@@ -1,77 +1,61 @@
-<!DOCTYPE HTML>
-<html>
+<!DOCTYPE html>
+<html lang="en">
 
 <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
   <style>
-    body {
-      margin: 0px;
-      padding: 0px;
+    canvas {
+      border: 1px dashed grey;
     }
   </style>
 </head>
 
 <body>
-  <canvas id="myCanvas" width="800" height="600"></canvas>
   <script>
-    var canvas = document.getElementById('myCanvas');
-    var context = canvas.getContext('2d');
+    var can
+    var ctx
+    window.addEventListener("DOMContentLoaded", () => {
+      can = document.getElementById('myCan')
+      ctx = can.getContext('2d')
+      drawPattern()
+    })
 
-    context.fillStyle = 'cyan';
+    function drawPattern() {
+      ctx.lineWidth = 6
+      ctx.beginPath()
+      ctx.moveTo(200, 200)
+      ctx.lineTo(250, 220)
+      ctx.lineTo(300, 270)
+      ctx.moveTo(320, 320)
+      ctx.lineTo(320, 370)
+      ctx.lineTo(300, 420)
 
-    context.fillRect(0, 0, 1500, 1000);
+      ctx.arc(150, 350, 50, 0, 4.2)
+      ctx.lineTo(220, 250)
 
-    context.beginPath();
-    context.moveTo(-10, 350);
-    context.quadraticCurveTo(400, 10, 810, 350);
-    context.lineWidth = 25;
-    context.strokeStyle = 'red';
-    context.stroke();
+      ctx.strokeStyle = "red"
+      ctx.fill()
+      ctx.stroke()
 
-    context.beginPath();
-    context.moveTo(-10, 380);
-    context.quadraticCurveTo(400, 30, 810, 380);
-    context.lineWidth = 30;
-    context.strokeStyle = 'orange';
-    context.stroke();
+      ctx.beginPath()
 
-    context.beginPath();
-    context.moveTo(-10, 410);
-    context.quadraticCurveTo(400, 55, 810, 410);
-    context.lineWidth = 30;
-    context.strokeStyle = 'yellow';
-    context.stroke();
+      ctx.moveTo(50, 50)
+      ctx.lineTo(150, 50)
+      ctx.lineTo(150, 150)
+      ctx.lineTo(50, 150)
 
-    context.beginPath();
-    context.moveTo(-10, 440);
-    context.quadraticCurveTo(400, 70, 810, 440);
-    context.lineWidth = 30;
-    context.strokeStyle = 'green';
-    context.stroke();
+      ctx.strokeStyle = "blue"
+      ctx.fillStyle = "green"
+      ctx.lineWidth = 3
+      ctx.fill()
+      ctx.stroke()
 
-    context.beginPath();
-    context.moveTo(-10, 470);
-    context.quadraticCurveTo(400, 95, 810, 470);
-    context.lineWidth = 30;
-    context.strokeStyle = 'blue';
-    context.stroke();
-
-    context.beginPath();
-    context.moveTo(-10, 500);
-    context.quadraticCurveTo(400, 110, 810, 500);
-    context.lineWidth = 30;
-    context.strokeStyle = 'indigo';
-    context.stroke();
-
-    context.beginPath();
-    context.moveTo(-10, 530);
-    context.quadraticCurveTo(400, 125, 810, 530);
-    context.lineWidth = 25;
-    context.strokeStyle = 'violet';
-    context.stroke();
-
+    }
 
   </script>
+  <canvas id="myCan" width="500" height="500">You don't support canvas</canvas>
 </body>
 
 </html>
-red, orange, yellow, green, blue, indigo, and violet,
