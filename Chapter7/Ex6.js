@@ -3,7 +3,7 @@ function scrabbleScore(word) {
   let score
   for (let l of word)
     switch (l.toLowerCase) {
-      case "a": case "e": case "i": case "l": case N:
+      case "a": case "e": case "i": case "l": case "n":
       case "o": case "r": case "s": case "t": case "u": score += 1; break;
       case "d": case "g": score += 2; break;
       case "b": case "c": case "m": case "p": score += 3; break;
