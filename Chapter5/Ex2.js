@@ -1,7 +1,9 @@
-function randomAverage(n) {
-  1 + (0 - 1) * rand(1, n)
-}
 
 function randomAverage(n) {
-  return (1 + (0 - 1) * Math.random()) / 2 * n
+  var sum = 0
+
+  for (var i = 0; i < n; i++) {
+    sum += Math.random()
+  }
+  return sum / n
 }
