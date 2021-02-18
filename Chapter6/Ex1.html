@@ -7,20 +7,41 @@
 </head>
 
 <body>
-  <canvas id="myCanvas" width="800" height="800"></canvas>
   <script>
-    var can = document.getElementById('myCanvas');
-    var ctx = can.getContext('2d');
-    ctx.strokeStyle = 'black';
 
+    var can = document.createElement('canvas')
+    can.width = 500
+    can.height = 500
+    can.style.border = "3px solid red"
+    document.body.appendChild(can)
 
-    function plot(w, f, xMin, xMax, yMin, yMax) {
-      for (let i = xMin; i <= xMax; i++) {
-        for (let j = yMin; j <= yMax; j++)
-          console.log("f(" + i + ") = " + f(i));
+    var ctx = can.getContext('2d')
+
+    var lastPoint = null
+    var steps = 1000
+
+    function plot(fn, minX, minY, maxX, maxY) {
+      for (var i = 0; i < steps; i++) {
+        var x = i / 10 + minX
+        var y = fn(x)
+        if (!lastPoint) {
+          lastPoint = { x, y }
+        }
+        drawLine(x, y, minX, minY, maxX, maxY)
+        lastPoint = { x, y }
       }
     }
 
+    function drawLine(x, y, minX, minY, maxX, maxY) {
+      var scaleX = can.width / (maxX - minX)
+      var scaleY = can.height / (maxY - minY)
+
+      ctx.beginPath()
+      ctx.moveTo(scaleX * (lastPoint.x - minX), scaleY * (lastPoint.y - minY))
+      ctx.lineTo(scaleX * (x - minX), scaleY * (y - minY))
+      ctx.stroke()
+    }
+    plot(Math.sin, -2 * Math.PI, -2 * Math.PI, 50, 11)
   </script>
 </body>
 
