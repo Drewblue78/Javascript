@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <canvas id="myCanvas" width="800" height="800"></canvas>
+  <script>
+    var can = document.getElementById('myCanvas');
+    var ctx = can.getContext('2d');
+    ctx.strokeStyle = 'black';
+
+    const N_PIECE = 2 * Math.PI / 6
+    var x = 200
+    var Mouth = 0
+    setInterval(() => {
+      ctx.clearRect(0, 0, 1000, 1000)
+      Mouth += 0.1
+      ctx.beginPath()
+      ctx.moveTo(x, 200)
+      ctx.arc(x, 200, 100, 0, N_PIECE - Math.cos(Mouth), N_PIECE * 5 + Math.cos(Mouth))
+      ctx.lineTo(x, 200)
+      ctx.stroke()
+      x += 10
+    }, 50)
+
+
+
+  </script>
+
+</body>
+
+</html>
