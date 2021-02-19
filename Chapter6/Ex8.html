@@ -15,45 +15,18 @@
     var ctx = can.getContext('2d');
     ctx.strokeStyle = 'black';
 
-    const N_PIECE = 2 * Math.PI / 6
+    const N_PIECES = 2 * Math.PI / 6
 
-    ctx.beginPath()
-    ctx.moveTo(200, 200)
-    ctx.arc(200, 200, 100, 0, N_PIECE, N_PIECE * 2)
-    ctx.lineTo(200, 200)
-    ctx.stroke()
-
-    ctx.beginPath()
-    ctx.moveTo(200, 200)
-    ctx.arc(200, 200, 100, 0, N_PIECE * 2, N_PIECE * 3)
-    ctx.lineTo(200, 200)
-    ctx.stroke()
-
-    ctx.beginPath()
-    ctx.moveTo(200, 200)
-    ctx.arc(200, 200, 100, 0, N_PIECE * 3, N_PIECE * 4)
-    ctx.lineTo(200, 200)
-    ctx.stroke()
-
-    ctx.beginPath()
-    ctx.moveTo(200, 200)
-    ctx.arc(200, 200, 100, 0, N_PIECE * 4, N_PIECE * 5)
-    ctx.lineTo(200, 200)
-    ctx.stroke()
-
-    ctx.beginPath()
-    ctx.moveTo(200, 200)
-    ctx.arc(200, 200, 100, 0, N_PIECE * 5, N_PIECE * 6)
-    ctx.lineTo(200, 200)
-    ctx.stroke()
-
-    ctx.beginPath()
-    ctx.moveTo(200, 200)
-    ctx.arc(200, 200, 100, 0, N_PIECE * 6, N_PIECE)
-    ctx.lineTo(200, 200)
-    ctx.stroke()
+    for (var i = 0; i < 6; i++) {
+      ctx.beginPath()
+      ctx.moveTo(200, 200)
+      ctx.arc(200, 200, 100, N_PIECES * (i + 1), N_PIECES * (i + 2))
+      ctx.lineTo(200, 200)
+      ctx.stroke()
+    }
 
   </script>
+  @click
 
 </body>
 

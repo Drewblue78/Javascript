@@ -14,19 +14,21 @@
     var can = document.getElementById('myCanvas');
     var ctx = can.getContext('2d');
     ctx.strokeStyle = 'black';
+    ctx.fillStyle = 'yellow';
 
     const N_PIECE = 2 * Math.PI / 6
     var x = 200
     var Mouth = 0
     setInterval(() => {
       ctx.clearRect(0, 0, 1000, 1000)
-      Mouth += 0.1
+      Mouth += 0.4
       ctx.beginPath()
       ctx.moveTo(x, 200)
-      ctx.arc(x, 200, 100, 0, N_PIECE - Math.cos(Mouth), N_PIECE * 5 + Math.cos(Mouth))
+      ctx.arc(x, 200, 100, N_PIECE / 2 - Math.cos(Mouth) / 2, N_PIECE * 5.5 + Math.cos(Mouth) / 2)
       ctx.lineTo(x, 200)
       ctx.stroke()
-      x += 10
+      ctx.fill()
+      x += 8
     }, 50)
 
 
