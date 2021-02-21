@@ -1,8 +1,11 @@
-function sortLetters(arr) {
-  for (var i = 0; i < String.length; i++) {
-    strArr[i] = str.charAt(i)
+function sortLetters(word) {
+  var x = "word"
+  var letters = []
+
+  word.split(word)
+  for (var l of x) {
+    letters.push(1)
   }
-  strArr.split()
-  strArr.sort()
-  strArr.join()
+  letters.sort()
+  letters.join("")
 }
