@@ -37,5 +37,6 @@ function drawConsoleArrow(width) {
     }
     console.log("done");
   }
+}
 
-  drawConsoleArrow(10)
+drawConsoleArrow(10)
