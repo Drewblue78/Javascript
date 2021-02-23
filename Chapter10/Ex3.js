@@ -9,5 +9,7 @@ function elapsedTime(calculation, repetitions) {
 
     calculation()
   }
-  return Date.now() - first
+}
+
+return Date.now() - first
 }

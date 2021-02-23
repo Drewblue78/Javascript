@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script src="EnglishLexicon.js"></script>
+  <script>
+    var first = Date.now()
+    let lex = EnglishLexicon()
+    console.log(lex.contains("hi"));
+    var words = []
+    for (var i = 0; i < 26; i++) {
+      for (var j = 0; j < 26; j++) {
+        if (lex.contains(word)) {
+          words.push(word)
+        }
+      }
+    }
+    function elapsedTime(calculation, repetitions) {
+      var func = Math.sqrt(2)
+      function EnglishLexicon() {
+        for (let i = 0; i < repetitions; i++) {
+
+          calculation()
+        }
+      }
+      return Date.now() - first
+    }
+  </script>
+</head>
+
+<body>
+
+</body>
+
+</html>
