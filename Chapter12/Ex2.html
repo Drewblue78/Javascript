@@ -27,14 +27,27 @@
     }
   </style>
   <script>
+    function count() {
 
+      for (var i = 0; i < 1; i++) {
+        if (i == 1) {
+          console.log("Please do not press this button again.");
+        }
+        if (i == 2) {
+          console.log("Do not press this button again.");
+        }
+        if (i >= 3) {
+          console.log("DO NOT PRESS THIS BUTTON AGAIN!");
+        }
+      }
+    }
   </script>
 </head>
 
 <body>
   <div class="container">
     <div class="center">
-      <button id="text" type="button" onclick="console.log('Please do not press this buttton again. ')">
+      <button id="text" onclick="count()" type="button">
         RED
       </button>
     </div>
