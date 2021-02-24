@@ -12,4 +12,3 @@ function elapsedTime(calculation, repetitions) {
 }
 
 return Date.now() - first
-}
