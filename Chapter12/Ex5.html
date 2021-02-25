@@ -53,6 +53,7 @@
           img.src = "cards.png"
           img.style.objectPosition = -(1 + 73 * j) + "px " + -(1 + 98 * i) + "px"
           board[i][j] = new Card(i, j, img)
+          img.src = "back.png"
           td.appendChild(img)
           tr.appendChild(td)
         }
@@ -96,6 +97,7 @@
       }
     }
     setup()
+    shuffle()
 
 
   </script>

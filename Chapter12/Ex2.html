@@ -27,19 +27,24 @@
     }
   </style>
   <script>
+    var i = 1
     function count() {
-
-      for (var i = 0; i < 1; i++) {
-        if (i == 1) {
-          console.log("Please do not press this button again.");
-        }
-        if (i == 2) {
-          console.log("Do not press this button again.");
-        }
-        if (i >= 3) {
-          console.log("DO NOT PRESS THIS BUTTON AGAIN!");
-        }
+      if (i == 1) {
+        addMessageTag("Please do not press this button again.");
       }
+      if (i == 2) {
+        addMessageTag("Do not press this button again.");
+      }
+      if (i == 3) {
+        addMessageTag("DO NOT PRESS THIS BUTTON AGAIN!");
+      }
+      i++
+    }
+
+    function addMessageTag(msg) {
+      var d = document.createElement('div')
+      d.innerText = msg
+      document.body.appendChild(d)
     }
   </script>
 </head>

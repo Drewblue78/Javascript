@@ -30,13 +30,11 @@
 
 
 function drawConsoleArrow(width) {
-  for (let i = 1; i < width; i++) {
+  for (let i = 1; i < 6; i++) {
     console.log("*".repeat(i));
-    for (let j = 1; j < width; j++) {
-      console.log("*".repeat(j));
-    }
-    console.log("done");
+  }
+  for (let j = 6; j >= 1; j--) {
+    console.log("*".repeat(j));
   }
 }
-
-drawConsoleArrow(10)
+drawConsoleArrow()
