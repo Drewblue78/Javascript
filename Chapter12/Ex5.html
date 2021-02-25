@@ -76,13 +76,14 @@
       } else {
         firstCard = card
       }
+
     }
 
     function shuffle() {
       for (var i = 0; i < bH; i++) {
         for (var j = 0; j < bW; j++) {
-          let randi = Math.floor(Math.random() * gH)
-          let randj = Math.floor(Math.random() * gW)
+          let randi = Math.floor(Math.random() * bH)
+          let randj = Math.floor(Math.random() * bW)
           let src = board[i][j]
           let des = board[randi][randj]
           let p1 = src.img.parentElement
