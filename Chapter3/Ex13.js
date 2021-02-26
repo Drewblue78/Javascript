@@ -1,5 +1,6 @@
 
 function printFactors(n) {
+  var given = n
   var factors = []
   for (var i = 2; i <= n; i++) {
     if (n % i === 0) {
@@ -8,5 +9,5 @@ function printFactors(n) {
       i--
     }
   }
-  console.log(n + "=" + factors.splice("*"))
+  console.log(given + " = " + factors.join("*"))
 }
