@@ -1,4 +1,8 @@
 
+// Write a function simulateRadioactiveDecay that models the process of radioactive decay. 
+// The first parameter is the initial population of atoms; the second is the probability
+// that any of those atoms will decay within a year.
+
 function simulateRadioactiveDecay(x) {
 
   let y = 0

@@ -1,3 +1,6 @@
+// Write a function midpoint that takes two values of type Point and returns a new Point
+// object whose coordinates define the midpoint of the line segment specified by the two parameters. 
+
 class Point {
   p1
   p2

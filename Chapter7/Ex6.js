@@ -1,4 +1,7 @@
 
+// Write a function scrabbleScore that takes a word and returns its score in Scrabble, not counting 
+// any of the other bonuses that occur in the game. You should ignore any characters other than
+
 function scrabbleScore(word) {
   let score = 0
   for (let l of word)

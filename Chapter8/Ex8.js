@@ -1,3 +1,12 @@
+// Implement a predicate function
+
+// function isMagicSquare(square)
+
+// that tests to see whether square is a magic square. Your function 
+// should work for matrices of any size. If you call isMagicSquare with
+//  an array with a different number of rows and columns, yourfunction 
+//  should return false.
+
 
 function isMagisSquare(square)
 var magicNumber = null

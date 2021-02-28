@@ -1,3 +1,14 @@
+// Write a function
+
+// function countMines(mines)
+
+// that goes through the array of mines and returns a new array 
+// with the same dimensions that indicates how many mines are in the 
+// neighborhood of each location. If a location contains a mine, the 
+// corresponding entry in the matrix returned by countMines should
+// be −1. In Minesweeper, the neighborhood consists of the eight 
+// adjacent locations as long as those locations are inside the array.
+
 let mineLocations = [
   [true, false, false, false, false, true],
   [false, false, false, false, false, true],
