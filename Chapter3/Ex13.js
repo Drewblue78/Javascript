@@ -1,3 +1,6 @@
+// Write a function printFactors(n) that lists all the factors in the form of a single line
+//  that includes the number n, an equal sign, and the individual factors separated by 
+//  asterisks, as illustrated in the following console log:
 
 function printFactors(n) {
   var given = n

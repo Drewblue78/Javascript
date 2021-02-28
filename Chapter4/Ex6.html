@@ -1,31 +1,33 @@
+<!--Write a program that displays a pyramid on the graphics window. 
+The pyramid consists of bricks in horizontal rows, arranged so that the 
+number of bricks in each row decreases by one as you move upward, as follows:-->
+
 <!DOCTYPE HTML>
 <html>
 
 <head>
-  <script>
 
-    for (let i = 1; i < brick; i++) {
-      console.log("*".repeat(i));
-      for (let j = 1; j < brick; j++) {
-        console.log("*".repeat());
-      }
-
-      var canvas = document.getElementById('myCanvas');
-      var ctx = canvas.getContext('2d');
-      ctx.strokeStyle = 'black';
-
-      ctx.beginPath();
-      ctx.rect(400, 400, 20, 10);
-      ctx.lineWidth = 3;
-      ctx.stroke();
-
-  </script>
 </head>
 
 <body>
   <canvas id="myCanvas" width="800" height="800"></canvas>
   <script>
 
+    var canvas = document.getElementById('myCanvas');
+    var ctx = canvas.getContext('2d');
+    ctx.strokeStyle = 'black';
+
+    ctx.beginPath();
+    ctx.rect(400, 400, 20, 10);
+    ctx.lineWidth = 3;
+    function drawPyramid(height) {
+      console.log(" ".repeat(height) + "rect");
+      for (let i = 1; i < height; i++) {
+        console.log(" ".repeat(height - i) + "rect".repeat(i) + "rect".repeat(i) + " ".repeat(height - i));
+      }
+    }
+    drawPyramid()
+    ctx.stroke();
 
 
 

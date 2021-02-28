@@ -4,23 +4,17 @@
 // the left and right borders using a vertical bar (|). For example, calling
 // drawConsoleBox(52, 6) should produce the following diagram:
 
-
 function drawConsoleBox(w, h) {
 
-  let line = "+"
-  for (let w = 0; w < 10; w++) {
-    line += "-"
-    line += "+";
-    for (let h = 0; h < 10; h++) {
-    }
+  for (let i = 0; i < 1; i++) {
+    console.log("+" + "-".repeat(w) + "+");
+  }
+  for (let j = 0; j < h; j++) {
+    console.log("|" + " ".repeat(w) + "|");
+  }
+  for (let i = 0; i < 1; i++) {
+    console.log("+" + "-".repeat(w) + "+");
   }
 }
 
-function drawConsoleBox(w, h) {
 
-  var line = "+"
-  for (var i = 0; i < 10; i++) {
-    line += "-"
-  }
-  line += "+"
-}

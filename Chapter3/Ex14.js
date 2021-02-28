@@ -1,3 +1,6 @@
+// Write a program that calculates an approximation of π consisting of 
+// the first 10,000 terms in Leibniz’s series.
+
 function Leibniz(n) {
   var sum = 0
 
