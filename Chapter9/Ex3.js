@@ -1,3 +1,9 @@
+// Define a Card class suitable for representing a standard playing card, 
+// which is identified by two components: a rank and a suit. The rank is stored
+// as an integer between 1 and 13 in which an ace is a 1, a jack is an 11, 
+// a queen is a 12, and a king is a 13. The suit is also represented internally
+// as an integer, which has will always be equal to one of the following four constants:
+
 const CLUBS = 0
 const DIAMONDS = 1
 const HEARTS = 2

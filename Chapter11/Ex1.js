@@ -1,3 +1,6 @@
+// Complete the definition of the Employee hierarchy from Figures 11-4 and 11-5
+//  by defining CommissionedEmployee and SalariedEmployee.
+
 
 function commissionedEmployee(name, title) {
   let emp = Employee(name, title);
